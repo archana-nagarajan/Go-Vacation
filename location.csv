@@ -1,0 +1,9 @@
+location_name,location_id,address,image,latitude,longitude
+Amsterdam,431cffcd-1470-4830-a8d0-0b26e9aee047,,,52.3702,4.8952
+Barcelona,88ef22f0-4028-4f8b-b2fe-d14be8156f92,,,41.3851,2.1734
+Berlin,e88ad622-39f2-4b39-a91a-d3d483c25cf2,,,52.52,13.405
+Dubai,78076a18-428a-46de-9574-a96ccefd088d,,,25.2048,55.2708
+London,624ed336-a422-436b-b7a0-d424b9387e3b,,,51.5074,0.1278
+Paris,d040899e-8d1f-4d5d-959a-8765ebb083e8,,,48.8566,2.3522
+Rome,74e547cc-49ae-43b2-a70f-4eff8d252023,,,41.9028,12.4964
+Tuscany,459d0ed3-fb5b-4ffa-a5a9-41a387f1684d,,,43.7711,11.2486

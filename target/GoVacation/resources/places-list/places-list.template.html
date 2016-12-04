@@ -1,0 +1,118 @@
+<div class="container-fluid">
+    <style>
+        html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+* {margin: 0; padding: 0;}
+
+div {
+  margin: 20px;
+}
+
+hr {
+height: 1px;
+color: #123455;
+background-color: #123455;
+border: none;
+}
+
+ul {
+  list-style-type: none;
+  width: 700px;
+}
+
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.box{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+	width:100px;
+	height:100px;
+}
+
+.red{
+	background:#f00;
+}
+    </style>
+    <!--locality: 
+    <span id="locality-text"></span> <br>
+    category: 
+    <span id="category-text"></span> <br>-->
+    <!--<input type="button" value="button" ng-click="$ctrl.initMap()">-->
+    <div id = "containerDiv" style="display: flex">
+	<div id="1" style="width: 700px; height: 700px;" >
+    <br>
+    <div id ="3">
+    <ul>
+    <li ng-repeat="item in $ctrl.items">
+      <img ng-src="resources/img/{{item.images.split('|')[0]}}" style="width:100px;height:100px;">
+      <h3 style="color:blue;"><a href="" ng-click="$ctrl.setItem(item);document.getElementById('modal-button').click()">&emsp;{{item.locationName}}</a></h3>
+      <p style = "color: grey"><small><b>&emsp;&emsp;{{item.locationAaddress}}</b></p>
+      <br>
+      &emsp;&emsp;<p style = "color: black"><small><b>{{item.detailedDescription}}</b></p>
+      <hr style="width:100%;">
+    </li>
+    
+    <!--<li ng-repeat="item in $ctrl.items">
+        {{item}}
+    </li>-->
+
+    <!--{{$ctrl.name}}-->
+    <!--<ul class="pagination pagination-sm">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>-->
+    <!--<hr width = "150%"></hr>-->
+    <!--<li>
+      <img src="img/dog.png" style="width:100px;height:100px;" >
+      <h3><b>2. The Grasslands</b></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet.</p>
+    </li>-->
+    </ul>
+	</div>
+
+    <div class="container text-center">
+
+
+<!-- Large modal -->
+
+</div>
+  </div>
+	<div id="2" style="">
+		 <div id="map" style="width: 700px; height: 100%;"></div>
+
+	</div>
+</div>
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "govacation",
+  "private": false,
+  "version": "0.0.0",
+  "description": "A web application to explore places of interest in and around you",
+  "repository": "https://github.com/krishnaramesh1/govacation",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+    "start": "http-server ./ -a localhost -p 16384 -c-1"
+  }
+}

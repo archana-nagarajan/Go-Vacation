@@ -1,0 +1,79 @@
+// Creating location table
+create table location(
+location_id uuid,
+location_name text,
+latitude float,
+longitude float,
+image blob,
+address text,
+primary key((location_name),location_id)
+);
+
+
+//Searching for landmarks in a location
+create table landmarks_by_location(
+location_name text,
+id uuid,
+name text,
+address text,
+type text,
+rating float,
+review list<text>,
+latitude float,
+longitude float,
+description text,
+detailed_description text,
+image list<text>,
+primary key((location_name), name,id)
+);
+
+//Searching for accommodation in a location
+create table accommodations_by_location(
+location_name text,
+id uuid,
+name text,
+address text,
+type text,
+rating float,
+review list<text>,
+latitude float,
+longitude float,
+description text,
+detailed_description text,
+image list<text>,
+primary key((location_name), name,id)
+);
+
+//Searching for restaurants in a location
+create table restaurants_by_location(
+location_name text,
+id uuid,
+name text,
+address text,
+type text,
+rating float,
+review list<text>,
+latitude float,
+longitude float,
+description text,
+detailed_description text,
+image list<text>,
+primary key((location_name), name,id)
+);
+
+//Searching for activities in a location
+create table activities_by_location(
+location_name text,
+id uuid,
+name text,
+address text,
+ype text,
+rating float,
+review list<text>,
+latitude float,
+longitude float,
+description text,
+detailed_description text,
+image list<text>,
+primary key((location_name), name,id)
+);

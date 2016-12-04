@@ -1,0 +1,6 @@
+// Copy commands
+
+copy landmarks_by_location from 'amsterdam_landmark.csv' with header=TRUE;
+copy location from 'location.csv' with header=TRUE;
+copy restaurants_by_location from 'london_restaurant.csv' with header=TRUE;
+copy accommodations_by_location from 'london_accommodation.csv' with header=TRUE;
