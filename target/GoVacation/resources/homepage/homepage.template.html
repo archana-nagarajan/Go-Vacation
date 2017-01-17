@@ -1,0 +1,196 @@
+<!--<div class="container-fluid">
+    <select name="category" id="category" ng-model="$ctrl.category">
+        <option value="Restaurants">Restaurants</option>
+        <option value="Activities">Activities</option>
+        <option value="Landmarks">Landmarks</option>
+        <option value="Hotels">Hotels</option>
+    </select>
+    <input type="text" id="txtPlaces" style="width: 250px" placeholder="Enter a location" />
+    <input type="button" id="search" value="Search" ng-click="$ctrl.onSearch()">
+</div>-->
+
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="">Go Vacation!!</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <center><h1><font size = "28">Go Vacation !!</font></h1></center> 
+                        <p><font size = "5"> "Traveling" it leaves you speechless, then turns you into a storyteller.“</font> </p>
+                        <hr class="intro-divider">
+                        <center>
+                        <ul class="list-inline intro-social-buttons">
+                       <center><input type="text" id="txtPlaces" ; style="background-color:White; color:Black;width:300px;height:42px";>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button ng-click="$ctrl.setCategory(5)" class="btn btn-default btn-lg"><span class="network-name">Search</span></button></center>
+                         <br>
+                            <li>
+                                <a class="btn btn-default btn-lg" ng-click="$ctrl.setCategory(1)"><span class="network-name">Landmarks</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg" ng-click="$ctrl.setCategory(2)"><span class="network-name">Restaurants</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg" ng-click="$ctrl.setCategory(3)"><span class="network-name">Hotels</span></a>
+                            </li>
+                            <li>
+                                <a class="btn btn-default btn-lg" ng-click="$ctrl.setCategory(4)"><span class="network-name">Activities</span></a>
+                            </li>
+                        </ul>
+                        </ul>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Landmarks</h2>
+                    <p class="lead">Our website helps you browse through the various beautiful landmarks of this World at the comfort of your house.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="/resources/img/ipad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Hotels and Restaurants</h2>
+                    <p class="lead">Our website helps you browse through and select from an impressive list of restaurants and hotels according to your location and personal preferences.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="/resources/img/dog.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Activities</h2>
+                    <p class="lead">Our Website offers a wide variety of indoor and outdoor activties to choose from for people of all ages.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="/resources/img/phones.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Connect to Go Vacation!!</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <p><font color = "#4d94ff">Ph: 352-284-4470 , Email: <a href = "https://www.google.com/gmail/">Govacation@gmail.com</a></font></p>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>

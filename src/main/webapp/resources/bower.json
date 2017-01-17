@@ -1,0 +1,14 @@
+{
+  "name": "govacation",
+  "description": "A web application to explore places of interest in and around you",
+  "version": "0.0.0",
+  "homepage": "https://github.com/krishnaramesh1/govacation",
+  "private": false,
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x",
+    "bootstrap": "3.3.x",
+    "jquery": "2.2.x"
+  }
+}

@@ -1,0 +1,14 @@
+com/project/cassandra/model/Location.class
+com/project/cassandra/configuration/CORSFilter.class
+com/project/cassandra/controller/FetchByLocationController.class
+com/project/cassandra/service/impl/UserServiceImpl.class
+com/project/cassandra/service/LocationService.class
+com/project/cassandra/helper/LocationHelper.class
+com/project/cassandra/configuration/GoVacationConfiguration.class
+com/project/cassandra/constants/Constants.class
+com/project/cassandra/configuration/GoVacationInitializer.class
+com/project/cassandra/controller/UserDetailsController.class
+com/project/cassandra/service/impl/LocationServiceImpl.class
+com/project/cassandra/controller/IndexController.class
+com/project/cassandra/service/UserService.class
+com/project/cassandra/model/User.class
