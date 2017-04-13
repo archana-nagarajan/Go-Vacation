@@ -88,10 +88,10 @@ public class LocationServiceImpl implements LocationService{
 
 	public List<Location> searchByLocation(String location) {
 		List<Location> allCategories=new ArrayList<Location>();
-		allCategories.addAll(findRestaurantsByLocation(location, 1000));
-		allCategories.addAll(findAccommodationByLocation(location, 1000));
-		allCategories.addAll(findLandmarkByLocation(location, 1000));
-		allCategories.addAll(findActivitiesByLocation(location, 5));
+		allCategories.addAll(findRestaurantsByLocation(location, 1));
+		allCategories.addAll(findAccommodationByLocation(location, 1));
+		allCategories.addAll(findLandmarkByLocation(location, 1));
+		allCategories.addAll(findActivitiesByLocation(location, 1));
 		return allCategories;
 		
 	}

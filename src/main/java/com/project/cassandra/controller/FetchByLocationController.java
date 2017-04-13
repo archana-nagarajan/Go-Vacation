@@ -27,7 +27,7 @@ public class FetchByLocationController{
      
     @RequestMapping(value = "/landmarks/{location_name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Location>> getLandmarkResultsByLocation(@PathVariable("location_name") String location) {
-    	List<Location> landmarks = locationService.findLandmarkByLocation(location,3000);
+    	List<Location> landmarks = locationService.findLandmarkByLocation(location,4);
         if(landmarks.isEmpty()){
             return new ResponseEntity<List<Location>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
         }
@@ -38,7 +38,7 @@ public class FetchByLocationController{
     
     @RequestMapping(value = "/activities/{location_name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Location>> getActivityResultsByLocation(@PathVariable("location_name") String location) {
-    	List<Location> activities = locationService.findActivitiesByLocation(location,3000);
+    	List<Location> activities = locationService.findActivitiesByLocation(location,4);
         if(activities.isEmpty()){
             return new ResponseEntity<List<Location>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
         }
@@ -49,7 +49,7 @@ public class FetchByLocationController{
  
     @RequestMapping(value = "/accommodations/{location_name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Location>> getAccommodationResultsByLocation(@PathVariable("location_name") String location) {
-    	List<Location> accommodations = locationService.findAccommodationByLocation(location,3000);
+    	List<Location> accommodations = locationService.findAccommodationByLocation(location,4);
         if(accommodations.isEmpty()){
             return new ResponseEntity<List<Location>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
         }
@@ -60,7 +60,7 @@ public class FetchByLocationController{
  
     @RequestMapping(value = "/restaurants/{location_name}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Location>> getRestaurantResultsByLocation(@PathVariable("location_name") String location) {
-    	List<Location> restaurants = locationService.findRestaurantsByLocation(location,3000);
+    	List<Location> restaurants = locationService.findRestaurantsByLocation(location,4);
         if(restaurants.isEmpty()){
             return new ResponseEntity<List<Location>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
         }

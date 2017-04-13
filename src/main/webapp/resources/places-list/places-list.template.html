@@ -34,7 +34,7 @@ h3 {
 
 li img {
   float: left;
-  margin: 0 15px 0 0;
+  margin: 0 15px 5px 0;
 }
 
 li p {
@@ -44,6 +44,7 @@ li p {
 li {
   padding: 10px;
   overflow: auto;
+  pointer-events: none;
 }
 
 li:hover {
@@ -74,11 +75,11 @@ li:hover {
     <div id ="3">
     <ul>
     <li ng-repeat="item in $ctrl.items">
-      <img ng-src="resources/img/{{item.images.split('|')[0]}}" style="width:100px;height:100px;">
-      <h3 style="color:blue;">&emsp;{{item.locationName}}</a></h3>
-      <p style = "color: grey"><small><b>&emsp;&emsp;{{item.locationAaddress}}</b></p>
+      <img ng-src="resources/img/{{item.images.split('|')[0]}}" src="resources/img/restaurant.jpg" style="width:100px;height:100px;">
+      <h3 style="color:blue;">{{(item.locationName) || 'Lorem Ipsum'}}</a></h3>
+      <span style = "color: grey"><small><b>{{(item.locationAaddress) || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}}</b></span>
       <br>
-      &emsp;&emsp;<p style = "color: black"><small><b>{{item.detailedDescription}}</b></p>
+      <span style = "color: black"><small><b>{{(item.detailedDescription) || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}}</b></span>
       <hr style="width:100%;">
     </li>
     
